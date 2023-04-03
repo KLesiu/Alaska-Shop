@@ -1,0 +1,17 @@
+.container{
+    background-color:rgba(0, 0, 0, 0.178);
+    height: 50%;
+    
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    padding: 1%;
+    width: 50%;
+}
+.container h1{
+    color: green;
+    font-size: 70px;
+}
+.container p{
+    font-size: 30px;
+}
