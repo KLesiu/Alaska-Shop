@@ -1,27 +1,29 @@
 nav{
     align-items: center;
-   
-    color: rgba(13, 155, 49, 0.829);
+   background-color:none;
+    color: rgba(173, 27, 202, 0.829);
     display: flex;
-   justify-content: flex-end
+   justify-content:flex-start
    ;
     position: absolute;
-    top:10%;
+    top:3%;
     width: 100%;
     height: 10%;
 }
 nav h2{
-    font-size: 50px;
-    margin-right: 55%;
+    font-size: 70px;
+    margin-left: 9%;
+    margin-right: 15.5%;
     text-shadow: 2px 2px 0px;
 }
 button{
-    color:rgba(87, 190, 134, 0.808) ;
+    color:rgba(173, 27, 202, 0.829) ;
     cursor: pointer;
     background: none;
     border: none;
     font-family: 'Delicious Handrawn', cursive;
-    font-size: 35px;
+    font-size: 55px;
+    font-weight: 700;
     margin-right: 5%;
     
 }

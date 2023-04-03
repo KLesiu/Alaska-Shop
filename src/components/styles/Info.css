@@ -1,17 +1,20 @@
 .container{
-    background-color:rgba(0, 0, 0, 0.178);
+    background-color:   rgba(173, 27, 202, 0.418);
+    ;
     height: 50%;
-    
+    border-radius: 5%;
+    left: 9%;
     position: absolute;
     text-align: center;
-    top: 40%;
+    top: 30%;
     padding: 1%;
-    width: 50%;
+    width: 40%;
 }
 .container h1{
-    color: green;
+    color: rgb(221, 209, 35);
     font-size: 70px;
 }
 .container p{
+    color: rgb(209, 160, 24) ;
     font-size: 30px;
 }
