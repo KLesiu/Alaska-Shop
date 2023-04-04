@@ -1,20 +1,74 @@
+@keyframes imageShow {
+    from{
+        transform: scale(1);
+     
+        
+        
+    }
+   
+    50%{
+     transform: scale(1.05);
+     
+    }
+   
+}
 .container{
-    background-color:   rgba(173, 27, 202, 0.418);
-    ;
+ 
+    
     height: 50%;
     border-radius: 5%;
     left: 9%;
     position: absolute;
     text-align: center;
     top: 30%;
-    padding: 1%;
-    width: 40%;
+    padding: 2%;
+    width: 35%;
 }
 .container h1{
     color: rgb(221, 209, 35);
     font-size: 70px;
+   
+
 }
 .container p{
     color: rgb(209, 160, 24) ;
     font-size: 30px;
+
+}
+.infoHolder{
+    position: absolute;
+    z-index: 2;
+}
+.background{
+    animation-name: imageShow;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    background-color:   rgba(173, 27, 202, 0.418);
+    border-radius: 10px;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+   
+    width: 100%;
+    z-index: 1;
+}
+.seeOffer{
+    align-items: center;
+    border: rgba(255, 255, 0, 0.329) solid 3px;
+    border-radius: 10px;
+    background-color: rgba(218, 189, 62, 0.288);
+    color: rgb(206, 203, 58);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    width: 30%;
+    z-index: 2;
+}
+.seeOffer:hover{
+    background-color: rgba(255, 255, 0, 0.418);
 }

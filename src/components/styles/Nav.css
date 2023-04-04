@@ -1,0 +1,37 @@
+.nav{
+    
+    display: flex;
+position: absolute;
+flex-wrap: wrap;
+justify-content: flex-start;
+align-items: center;
+left: 3%;
+top: 15%;
+width: 30%;
+height: 70%;
+}
+.nav h2{
+
+  
+    color:rgb(196, 162, 11);
+    font-size: 50px;
+   margin-top: 10%;
+    text-align: start;
+    width: 100%;
+}
+.nav ul{
+    background-color:   rgba(173, 27, 202, 0.384);
+    width: 75%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:3%;
+    height: 80%;
+}
+.nav ul>li{
+    color: yellow;
+    font-size: 30px;
+    list-style-type: none;
+}

@@ -1,0 +1,80 @@
+@keyframes imageShow {
+    from{
+        transform: scale(1);
+        
+        
+    }
+    50%{
+     transform: scale(1.05);
+    }
+    100%{
+        
+    }
+}
+.holder{
+  
+    border-radius: 10px;
+    
+
+    width: 35%;
+    height: 50%;
+    position: absolute;
+    right: 9%;
+    padding: 2%;
+    top: 30%;
+}
+.slider{
+    
+    
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+   
+    
+    
+}
+.slider img{
+    
+    border-radius: 10px;
+    
+    width: 70%;
+    height: 70%;
+    left: 20%;
+    opacity: 0.6;
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+}
+.slider img:hover{
+    opacity: 1;
+}
+.textHolder{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+ .textHolder p{
+    color: rgb(221, 209, 35);
+    font-size: 35px;
+    font-weight: 700;
+    
+}
+.animationDiv{
+    animation-name: imageShow;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    ;
+    border-radius: 10px;
+    background-color:   rgba(173, 27, 202, 0.418);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}

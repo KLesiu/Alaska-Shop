@@ -9,6 +9,7 @@ nav{
     top:3%;
     width: 100%;
     height: 10%;
+    z-index: 3;
 }
 nav h2{
     font-size: 70px;
@@ -17,10 +18,12 @@ nav h2{
     text-shadow: 2px 2px 0px;
 }
 button{
+    align-items: center;
     color:rgba(173, 27, 202, 0.829) ;
     cursor: pointer;
     background: none;
     border: none;
+    display: flex;
     font-family: 'Delicious Handrawn', cursive;
     font-size: 55px;
     font-weight: 700;
@@ -29,4 +32,14 @@ button{
 }
 button:hover{
     color: yellow;
+}
+input{
+    background-color: rgba(0, 0, 0, 0.247);
+    border: none;
+    color: rgb(204, 207, 32);
+    height: 30%;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-right: 10%;
+    width: 10%;
 }
