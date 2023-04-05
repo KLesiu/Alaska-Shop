@@ -1,0 +1,16 @@
+.item{
+    background-color:   rgba(173, 27, 202, 0.384);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 70%;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    width: 60%;
+}
+.item h2{
+    font-size: 35px;
+    text-align: center;
+    width: 90%;
+}

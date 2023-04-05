@@ -1,11 +1,13 @@
 import React from "react";
-import Nav from "./Nav";
+import ShopMain from "./ShopMain";
 import './styles/ShopPage.css'
+
 const ShopPage=()=>{
     
     return(
         <div className="shopPage">
-            <Nav/>
+            <ShopMain/>
+            
         </div>
         
     )
