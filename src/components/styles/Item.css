@@ -1,16 +1,43 @@
-.item{
+.items{
     background-color:   rgba(173, 27, 202, 0.384);
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 70%;
+    height: 84%;
     position: absolute;
     top: 25%;
     right: 5%;
     width: 60%;
 }
-.item h2{
-    font-size: 35px;
+.items h2{
+    font-size: 45px;
     text-align: center;
     width: 90%;
+}
+.holderForInfo{
+    width: 40%;
+}
+.holderForItems{
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    height: 80%;
+}
+.item{
+    width: 65%;
+}
+.item img{
+    border-radius: 10px;
+    cursor: pointer;
+    width: 85%;
+    height: 85%;
+    transform: rotate(2deg);
+    opacity: 0.6;
+}
+.item img:hover{
+    opacity: 1;
 }
