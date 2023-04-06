@@ -34,12 +34,13 @@ height: 90%;
     padding:3%;
     height: 80%;
 }
-.nav ul>li{
+.nav ul>a,.nav ul>li{
     color: yellow;
     cursor: pointer;
     font-size: 30px;
     list-style-type: none;
+    text-decoration: none;
 }
-.nav ul>li:hover {
+.nav ul>a:hover,.nav ul>li:hover {
     color: rgb(215, 84, 233);
 }

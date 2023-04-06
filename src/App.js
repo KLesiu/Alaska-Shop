@@ -8,7 +8,7 @@ import Info from './components/Info';
 import Slider from './components/Slider';
 import Menu from './components/Menu';
 import Item from './components/Item';
-
+import { Link } from 'react-router-dom';
 
 import { BrowserRouter,Routes,Route} from 'react-router-dom';
 import ItemInfo from './components/ItemInfo';
@@ -77,10 +77,10 @@ const handleChange=(e)=>{
   if(item.atractions.first.name===e.target.textContent)
   {
     console.log('git')
-    setCurrentItem({name:e.target,description:item.atractions.first.description})
+    setCurrentItem({name:e.target.textContent,description:item.atractions.first.description})
   } 
-  else if(item.atractions.second.name===e.target.textContent) setCurrentItem({name:e.target,description:item.atractions.second.description})
-  else if (item.atractions.third.name===e.target.textContent) setCurrentItem({name:e.target,description:item.atractions.third.description})
+  else if(item.atractions.second.name===e.target.textContent) setCurrentItem({name:e.target.textContent,description:item.atractions.second.description})
+  else if (item.atractions.third.name===e.target.textContent) setCurrentItem({name:e.target.textContent,description:item.atractions.third.description})
 }
   return (
     <div className="App">
@@ -210,19 +210,19 @@ const handleChange=(e)=>{
                 third: {
                   name: 'Alaska Wildlife Conservation Center',
                   description: `
-                  Ciesz się biletem wstępu, który zapewni Ci dostęp do ponad 200 akrów wybiegów dla zwierząt i wspaniałej przyrody. Wybierz się na samodzielną wycieczkę po malowniczej, 1,5-kilometrowej pętli, do której można dotrzeć pieszo, rowerem lub samochodem, jednocześnie poznając dziką przyrodę za pomocą znaków interpretacyjnych w każdym siedlisku zwierząt.
+                  Enjoy an entrance ticket that has given you access to over 200 acres of animal enclosures and stunning wildlife. Take a self-guided after-show, a 1.5-mile loop that can be reached on foot, by bike, or by vehicle, while learning about the wildlife with interpretive signs at each animal habitat.
                   
-                  Wspieraj Alaska Wildlife Conservation Center, które jest sanktuarium non-profit, którego celem jest ochrona dzikiej przyrody Alaski poprzez ochronę, edukację, badania i wysokiej jakości opiekę nad zwierzętami.
-                  
-                  
-                  
-                  Centrum Ochrony Przyrody Alaski (AWCC) znajduje się w Portage Valley i jest otoczone zapierającym dech w piersiach pasmem górskim Chugach i Turnagain Arm Inlet.
-                  
-                  Przejdź przez 1,5-milową pętlę AWCC, która jest idealną przygodą na zimowe miesiące. Doświadcz unikalnych sposobów na zwiedzanie Centrum, podziwiając przyrodę w zimie, w tym szybowanie na nartach biegowych, jazdę na grubym rowerze lub korzystanie z bezpłatnych wypożyczalni sanek z AWCC.
+                  Support the Alaska Wildlife Conservation Center, which is a non-profit sanctuary dedicated to preserving Alaska's wildlife through conservation, cost, research, and high-quality animal conservation.
                   
                   
                   
-                  Zrelaksuj się na pokładzie własnego pojazdu z malowniczą pętlą o długości 1,5 mili wokół sanktuarium. Zobacz osierocone i ranne zwierzęta przyjęte przez AWCC, które teraz otrzymały dom na zawsze.`
+                  The Alaska Conservation Center (AWCC) is located in Portage Valley and is surrounded by the breathtaking Chugach Mountain Range and Turnagain Arm Inlet.
+                  
+                  Walk through the 1.5-mile AWCC Loop, which is a member of the adventure for the winter months. Experience unique ways to explore the Center while admiring nature in winter, including gliding on cross-country railways, additionally on a fat trolley or using the free sledge rental from AWCC.
+                  
+                  
+                  
+                  Relax on your own vehicle with a scenic 1.5-mile loop around the sanctuary. See orphaned and injured alongside animals by the AWCC now given a forever home.`
                 }
               }})
               }}>Visit Anchorage and see the most popular places </li>
@@ -389,7 +389,7 @@ const handleChange=(e)=>{
         <nav className="nav">
             <h2>Our Offer</h2>
             <ul>
-              <li onClick={()=>{
+             <Link to={'/shopPage'}><li onClick={()=>{
                 setItem({name:'Visit beautiful Juneau!',img:{
                     first:'/Images/Juneau/1.jpg',
                     second:'/Images/Juneau/2.jpg',
@@ -448,9 +448,9 @@ const handleChange=(e)=>{
                   
             
                 }})
-              }}>Trips to the Capital - Exciting Juneau</li> 
+              }}>Trips to the Capital - Exciting Juneau</li> </Link> 
 
-              <li onClick={()=>{
+            <Link to={'/shopPage'}> <li onClick={()=>{
                 setItem({name:'Have an amazing adventures in Anchorage!',img:{
                     first:'/Images/Anchorage/boat-3536807__340.jpg',
                     second:'/Images/Anchorage/sandspollen-3767414__340.jpg',
@@ -496,24 +496,25 @@ const handleChange=(e)=>{
                 third: {
                   name: 'Alaska Wildlife Conservation Center',
                   description: `
-                  Ciesz się biletem wstępu, który zapewni Ci dostęp do ponad 200 akrów wybiegów dla zwierząt i wspaniałej przyrody. Wybierz się na samodzielną wycieczkę po malowniczej, 1,5-kilometrowej pętli, do której można dotrzeć pieszo, rowerem lub samochodem, jednocześnie poznając dziką przyrodę za pomocą znaków interpretacyjnych w każdym siedlisku zwierząt.
+                  Enjoy an entrance ticket that has given you access to over 200 acres of animal enclosures and stunning wildlife. Take a self-guided after-show, a 1.5-mile loop that can be reached on foot, by bike, or by vehicle, while learning about the wildlife with interpretive signs at each animal habitat.
                   
-                  Wspieraj Alaska Wildlife Conservation Center, które jest sanktuarium non-profit, którego celem jest ochrona dzikiej przyrody Alaski poprzez ochronę, edukację, badania i wysokiej jakości opiekę nad zwierzętami.
-                  
-                  
-                  
-                  Centrum Ochrony Przyrody Alaski (AWCC) znajduje się w Portage Valley i jest otoczone zapierającym dech w piersiach pasmem górskim Chugach i Turnagain Arm Inlet.
-                  
-                  Przejdź przez 1,5-milową pętlę AWCC, która jest idealną przygodą na zimowe miesiące. Doświadcz unikalnych sposobów na zwiedzanie Centrum, podziwiając przyrodę w zimie, w tym szybowanie na nartach biegowych, jazdę na grubym rowerze lub korzystanie z bezpłatnych wypożyczalni sanek z AWCC.
+                  Support the Alaska Wildlife Conservation Center, which is a non-profit sanctuary dedicated to preserving Alaska's wildlife through conservation, cost, research, and high-quality animal conservation.
                   
                   
                   
-                  Zrelaksuj się na pokładzie własnego pojazdu z malowniczą pętlą o długości 1,5 mili wokół sanktuarium. Zobacz osierocone i ranne zwierzęta przyjęte przez AWCC, które teraz otrzymały dom na zawsze.`
+                  The Alaska Conservation Center (AWCC) is located in Portage Valley and is surrounded by the breathtaking Chugach Mountain Range and Turnagain Arm Inlet.
+                  
+                  Walk through the 1.5-mile AWCC Loop, which is a member of the adventure for the winter months. Experience unique ways to explore the Center while admiring nature in winter, including gliding on cross-country railways, additionally on a fat trolley or using the free sledge rental from AWCC.
+                  
+                  
+                  
+                  Relax on your own vehicle with a scenic 1.5-mile loop around the sanctuary. See orphaned and injured alongside animals by the AWCC now given a forever home.
+                `
                 }
               }})
-              }}>Visit Anchorage and see the most popular places </li>
+              }}>Visit Anchorage and see the most popular places </li> </Link> 
 
-              <li onClick={()=>{
+            <Link to={'/shopPage'}> <li onClick={()=>{
                 setItem({name:'Do you like sailing? You can do that in Alaska!',img:{
                     first:'/Images/ShipTrips/cruise-g86757c4ac_640.jpg',
                     second:'/Images/ShipTrips/boat-gd014cea71_640.jpg',
@@ -565,9 +566,9 @@ const handleChange=(e)=>{
                 }
               
               }})
-              }} >Enjoy Ship Trips</li>
+              }} >Enjoy Ship Trips</li> </Link>
 
-              <li onClick={()=>{
+             <Link to={'/shopPage'}> <li onClick={()=>{
                 setItem({name:'Enjoy Alaska alone,family or friends. Rent a motorhome or move by train',img:{
                     first:'/Images/camper.jpg',
                     second: '/Images/train.jpg',
@@ -596,9 +597,9 @@ const handleChange=(e)=>{
                   Deciding to travel on the Alaska Railroad train, we are practically "doomed" to watch the amazing local nature at its best. Regardless of the route, the views are always stunning - mountain peaks, rushing rivers, valleys, forests, glaciers.`
                 }
               }})
-              }}>Rent a motorhome and admire Alaska landscape</li>
+              }}>Rent a motorhome and admire Alaska landscape</li> </Link>
 
-              <li onClick={()=>{
+            <Link to={'/shopPage'}> <li onClick={()=>{
                 setItem({name:'Enjoy the beauty of nature in National Denali Park',img:{
                     first:'/Images/Denali/denali-national-park-g32f0dae85_640.jpg',
                     second:'/Images/Denali/marmot-g2a413b880_640.jpg',
@@ -635,9 +636,9 @@ const handleChange=(e)=>{
                     Bring your camera and curiosity about this amazing landscape. After completing the trail, relax in the van as you drive back to your accommodation in Denali.`
                   }
                 }})
-              }}>Trips to Denali Nation Park with a guide</li>
+              }}>Trips to Denali Nation Park with a guide</li> </Link>
 
-              <li onClick={()=>{
+            <Link to={'/shopPage'}><li onClick={()=>{
                 setItem({name:'Fishing is pure pleasure with us, if you need equipment, you will find it with us!',img:{
                     first:'/Images/Fishing/boat-ga1168822d_640.jpg',
                     second:'/Images/Fishing/fishing-g10e0ed3b9_640.jpg',
@@ -658,7 +659,7 @@ const handleChange=(e)=>{
                   description: `Rent fishing gear here and fish in one of the world's most angler-friendly locations`
                 }
               }})
-              }}>Rent a fishing equipment</li>
+              }}>Rent a fishing equipment</li></Link>
             </ul>
         </nav>
         <ItemInfo info={currentItem} />

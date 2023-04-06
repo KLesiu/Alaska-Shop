@@ -22,7 +22,7 @@ const Menu=()=>{
     }
 return(
     <nav>
-        <Link style={{textDecoration: 'none'}} to={'/'}><h2>Alaska Dream</h2></Link>
+        <Link className="home" style={{textDecoration: 'none'}} to={'/'}><h2>Alaska Dream</h2></Link>
         <Link style={{textDecoration: 'none',marginRight:5+'%'}} to={'/shopPage'}>
         <button>Shop</button>
         </Link>

@@ -1,0 +1,13 @@
+.currentInfo{
+    background-color:   rgba(173, 27, 202, 0.384);
+    border-radius: 10px;
+    color: rgb(228, 212, 68);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 84%;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    width: 60%;
+}
