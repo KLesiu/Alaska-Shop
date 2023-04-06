@@ -1,5 +1,9 @@
 import React from "react";
 import './styles/Item.css'
+import { Link } from "react-router-dom";
+
+import uniqid from 'uniqid'
+import ItemInfo from "./ItemInfo";
 const Item=(props)=>{
     
     const items=[{src:props.info.img.first},{src:props.info.img.second},{src:props.info.img.third}]
@@ -14,7 +18,7 @@ const Item=(props)=>{
     })
     const showAtractions=atractions.map((element)=>{
         return(
-            <li>{element.name}</li>
+           <Link to={`/shopPage/${uniqid()}`}><li onClick={props.onChange} key={uniqid()}>{element.name}</li></Link> 
         )
     })
 return(
