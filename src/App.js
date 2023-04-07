@@ -73,14 +73,36 @@ function App() {
 }})
 const [currentItem,setCurrentItem]=useState('')
 const handleChange=(e)=>{
-  
+  const currentPhoto=showImage(e.target.textContent)
+  console.log(currentPhoto)
   if(item.atractions.first.name===e.target.textContent)
   {
-    console.log('git')
-    setCurrentItem({name:e.target.textContent,description:item.atractions.first.description})
+   
+    setCurrentItem({name:e.target.textContent,description:item.atractions.first.description,img:currentPhoto})
   } 
-  else if(item.atractions.second.name===e.target.textContent) setCurrentItem({name:e.target.textContent,description:item.atractions.second.description})
-  else if (item.atractions.third.name===e.target.textContent) setCurrentItem({name:e.target.textContent,description:item.atractions.third.description})
+  else if(item.atractions.second.name===e.target.textContent) setCurrentItem({name:e.target.textContent,description:item.atractions.second.description,img:currentPhoto})
+  else if (item.atractions.third.name===e.target.textContent) setCurrentItem({name:e.target.textContent,description:item.atractions.third.description,img:currentPhoto})
+}
+const showImage=(value)=>{
+  if(value==='Juneau and Mendenhall glacier') return '/Images/Juneau/1.jpg'
+  else if(value==='Segway Rainforest Photo Safari') return '/Images/Juneau/3.jpg'
+  else if(value==='Sentinel Lighthouse and Whale Watching Cruise') return '/Images/Juneau/2.jpg'
+  else if(value===`Half-Day Resurrection Bay Wildlife Cruise`) return `/Images/Anchorage/boat-3536807__340.jpg`
+  else if(value===`Traditional dog sled ride from Alaska`) return '/Images/Anchorage/dog-g30058c7ad_640.jpg'
+  else if(value==='Alaska Wildlife Conservation Center') return '/Images/Anchorage/sandspollen-3767414__340.jpg'
+  else if(value==='Kenai Fjords National Park 6-Hour Cruise') return '/Images/ShipTrips/cruise-g86757c4ac_640.jpg'
+  else if(value==='Valdez: 6-Hour Columbia Glacier Cruise') return '/Images/ShipTrips/boat-gd014cea71_640.jpg'
+  else if(value==='From Juneau: Whale Watching Cruise with Refreshments') return '/Images/whale.jpg'
+  else if(value==='Hymer motorhome') return '/Images/Motorhome/camper-ge2cb69f63_640.jpg'
+  else if(value==='Anchorage: 1-Hour Tram Tour') return '/Images/Motorhome/cityrunner-g60126241f_640.jpg'
+  else if(value==='Alaska Railroad') return '/Images/train.jpg'
+  else if(value==='Denali Park Zipline Adventure') return '/Images/Denali/denali-national-park-g32f0dae85_640.jpg'
+  else if(value==='Denali National Park: Wilderness ATV Adventure') return '/Images/Denali/marmot-g2a413b880_640.jpg'
+  else if(value==='Denali: Denali National Park Walking Tour') return '/Images/Denali/moose-g4e34e03c5_640.jpg'
+  else if(value==='Visit the capital of fishing - Yakutat') return '/Images/Fishing/rod-g7a2558edb_640.jpg'
+  else if(value==='Guided fishing on the Kenai Peninsula')
+  return '/Images/Fishing/fishing-g10e0ed3b9_640.jpg'
+  else if(value==='Enjoy Nowitna') return '/Images/Fishing/rod-g7a2558edb_640.jpg'
 }
   return (
     <div className="App">
@@ -168,7 +190,7 @@ const handleChange=(e)=>{
                 setItem({name:'Have an amazing adventures in Anchorage!',img:{
                     first:'/Images/Anchorage/boat-3536807__340.jpg',
                     second:'/Images/Anchorage/sandspollen-3767414__340.jpg',
-                    third: '/Images/Anchorage/venice-2933666__340.jpg'
+                    third: '/Images/Anchorage/dog-g30058c7ad_640.jpg'
                 },
               atractions:{
                 first: {
