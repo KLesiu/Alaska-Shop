@@ -141,7 +141,8 @@ const getNumberOfOrder=()=>{
                     
                     The highlight of the tour is Juneau's natural treasure, the Mendenhall Glacier. It is one of 38 glaciers flowing out of Juneau's vast 1,500-square-mile ice field.
                     
-                    At this stop, you can explore this glacial wonder from a variety of perspectives, such as Nugget Creek Falls and the Photo Point Trail, which meanders along Lake Mendenhall and provides an unobstructed view of the glacier face. Visit the Mendenhall Glacier Visitor Center for an elevated view of the glacier and interactive geology exhibits explaining the formation of the glacier.`
+                    At this stop, you can explore this glacial wonder from a variety of perspectives, such as Nugget Creek Falls and the Photo Point Trail, which meanders along Lake Mendenhall and provides an unobstructed view of the glacier face. Visit the Mendenhall Glacier Visitor Center for an elevated view of the glacier and interactive geology exhibits explaining the formation of the glacier.`,
+                    price: 150
                   } ,
                   second: {
                     name: 'Segway Rainforest Photo Safari',
@@ -151,7 +152,8 @@ const getNumberOfOrder=()=>{
                     
                     Hear the calls of eagles in flight, the waves lapping against the shoreline, and maybe even spot a humpback whale from time to time. For an added adventure, hop off your Segway and walk the seven-minute path to a secluded beach to enjoy some local snacks. Immerse yourself in the Tongas National Forest, a temperate rainforest and the largest national forest in the US.
                     
-                    Continue on to take amazing photos while taking in the panoramic views with fellow travelers. During the journey, your guide will tell you about the diverse native flora and fauna. Don't miss this extraordinary experience to discover one of the most unique places in Alaska.`
+                    Continue on to take amazing photos while taking in the panoramic views with fellow travelers. During the journey, your guide will tell you about the diverse native flora and fauna. Don't miss this extraordinary experience to discover one of the most unique places in Alaska.`,
+                    price: 59
                   }, 
                   third: {
                     name: 'Sentinel Lighthouse and Whale Watching Cruise',
@@ -178,11 +180,12 @@ const getNumberOfOrder=()=>{
                     
                     
                     
-                    Check out the shop for souvenir lighthouse pins, t-shirts, hats and sweatshirts that can be purchased, with proceeds going towards the lighthouse's ongoing restoration. Climb the lighthouse tower, view the lighthouse and look out over the Lynn Canal.
+                
                     
                     
                     
-                    Return to the boat for a scenic drive to Yankee Cove to meet your driver who will take you live to the Brotherhood Bridge Lookout, where you can view the Mendenhall Glacier (weather permitting). Return to the ship and return to the meeting point in Juneau.`
+                    `,
+                    price: 100
                   } ,
                   
             
@@ -206,7 +209,8 @@ const getNumberOfOrder=()=>{
                   
                   
                   
-                  Marvel at the speed of the Dall Porpoise as it surfs the ship's wake. Marvel at the size and majesty of killer whales, humpback whales and other amazing whale species, and learn about their habitat from your on-board guide. Admire the wildlife of Kenai Fjords National Park.`
+                  Marvel at the speed of the Dall Porpoise as it surfs the ship's wake. Marvel at the size and majesty of killer whales, humpback whales and other amazing whale species, and learn about their habitat from your on-board guide. Admire the wildlife of Kenai Fjords National Park.`,
+                  price: 170
                 },
                 second: {
                   name: `Traditional dog sled ride from Alaska`,
@@ -230,7 +234,8 @@ const getNumberOfOrder=()=>{
                   
                   
                   
-                  After the ride, let the dogs run out for a while to play. Connect with the huskies and watch them happily jump around you. Finally, warm up in the visitor center with cookies, cocoa, and a dog hug.`
+                  After the ride, let the dogs run out for a while to play. Connect with the huskies and watch them happily jump around you. Finally, warm up in the visitor center with cookies, cocoa, and a dog hug.`,
+                  price: 20
                 },
                 third: {
                   name: 'Alaska Wildlife Conservation Center',
@@ -247,7 +252,8 @@ const getNumberOfOrder=()=>{
                   
                   
                   
-                  Relax on your own vehicle with a scenic 1.5-mile loop around the sanctuary. See orphaned and injured alongside animals by the AWCC now given a forever home.`
+                  Relax on your own vehicle with a scenic 1.5-mile loop around the sanctuary. See orphaned and injured alongside animals by the AWCC now given a forever home.`,
+                  price: 50
                 }
               }})
               }}>Visit Anchorage and see the most popular places </li>
@@ -268,7 +274,8 @@ const getNumberOfOrder=()=>{
   
                   The cruise begins with a wildlife search in the protected waters of Resurrection Bay. Whales, sea otters and puffins are often sighted within minutes of leaving port. The captain will provide information about the wildlife, glaciers, fjords and history of the area.
                 
-                Stop at one of the tidal glaciers where calving is common, where giant chunks of glacier ice break off and fall into the water. A fully stocked bar is available for those wishing to sample local beers and glacier cocktails. Enjoy a deli lunch on board during the cruise.`
+                Stop at one of the tidal glaciers where calving is common, where giant chunks of glacier ice break off and fall into the water. A fully stocked bar is available for those wishing to sample local beers and glacier cocktails. Enjoy a deli lunch on board during the cruise.`,
+                price: 150
                 },
                 second: {
                   name: 'Valdez: 6-Hour Columbia Glacier Cruise',
@@ -284,7 +291,8 @@ const getNumberOfOrder=()=>{
                   
                   
                   
-                  Step into Columbia Bay and put on your warm layers and winter gear. Discover a world surrounded by ice, largely untouched by humans. Return in time to explore the community of Valdez and enjoy dinner at a local restaurant.`
+                  Step into Columbia Bay and put on your warm layers and winter gear. Discover a world surrounded by ice, largely untouched by humans. Return in time to explore the community of Valdez and enjoy dinner at a local restaurant.`,
+                  price: 120
                 },
                 third: {
                   name: 'From Juneau: Whale Watching Cruise with Refreshments',
@@ -300,7 +308,8 @@ const getNumberOfOrder=()=>{
                   
                   
                   
-                  This tour includes transfers between downtown and Auke Bay and two hours on the water. The price of the tour includes onboard drinks including bottled water, coffee, hot chocolate and a small snack of locally caught Alaskan salmon on a fresh bagel.`
+                  This tour includes transfers between downtown and Auke Bay and two hours on the water. The price of the tour includes onboard drinks including bottled water, coffee, hot chocolate and a small snack of locally caught Alaskan salmon on a fresh bagel.`,
+                  price: 200
                 }
               
               }})
@@ -316,7 +325,8 @@ const getNumberOfOrder=()=>{
               atractions:{
                 first:{
                   name: 'Hymer motorhome',
-                  description: `Rent a modern HYMER and enjoy Alaska with him`
+                  description: `Rent a modern HYMER and enjoy Alaska with him`,
+                  price: 100
                 },
                 second: {
                   name: 'Anchorage: 1-Hour Tram Tour',
@@ -326,13 +336,15 @@ const getNumberOfOrder=()=>{
                   
                   See the Alaska Railroad and floating planes departing from Lake Hood and Lake Spenard. Enjoy breathtaking views of mountain ranges, wildlife, and historic districts
                   
-                  Plus, get a coupon book serving over 20 restaurants, gift shops, tours, and attractions in downtown Anchorage.`
+                  Plus, get a coupon book serving over 20 restaurants, gift shops, tours, and attractions in downtown Anchorage.`,
+                  price: 30
                   
                 },
                 third:{
                   name: 'Alaska Railroad',
                   description: `
-                  Deciding to travel on the Alaska Railroad train, we are practically "doomed" to watch the amazing local nature at its best. Regardless of the route, the views are always stunning - mountain peaks, rushing rivers, valleys, forests, glaciers.`
+                  Deciding to travel on the Alaska Railroad train, we are practically "doomed" to watch the amazing local nature at its best. Regardless of the route, the views are always stunning - mountain peaks, rushing rivers, valleys, forests, glaciers.`,
+                  price: 60
                 }
               }})
               }}>Rent a motorhome and admire Alaska landscape</li>
@@ -351,7 +363,8 @@ const getNumberOfOrder=()=>{
                     
                     
                     
-                    Glide through trees and tundra on over half a mile of zip lines. Finish this one-of-a-kind adventure by racing to the finish with your friends and family.`
+                    Glide through trees and tundra on over half a mile of zip lines. Finish this one-of-a-kind adventure by racing to the finish with your friends and family.`,
+                    price: 80
                   },
                   second:{
                     name: 'Denali National Park: Wilderness ATV Adventure',
@@ -361,7 +374,8 @@ const getNumberOfOrder=()=>{
                     
                     Navigate rocky creek beds and even spend time splashing around in the water (weather permitting). Experienced guides will lead you through the rugged terrain and provide photo opportunities.
                     
-                    The wildlife is plentiful - watch out for moose on the trail. The total route of the tour is approximately 10 miles with 1.5 hours on the trails. The length of the tour is approximately 2.5 hours from pickup to pickup.`
+                    The wildlife is plentiful - watch out for moose on the trail. The total route of the tour is approximately 10 miles with 1.5 hours on the trails. The length of the tour is approximately 2.5 hours from pickup to pickup.`,
+                    price: 50
                   },
                   third: {
                     name: 'Denali: Denali National Park Walking Tour',
@@ -371,7 +385,8 @@ const getNumberOfOrder=()=>{
                     
                     Learn about the animals, people, and plants of Denali from your expert local guide. Admire the unique natural landscape as you traverse the trail. Enjoy stopping for rest and conversation along the way, and even pick blueberries when in season.
                     
-                    Bring your camera and curiosity about this amazing landscape. After completing the trail, relax in the van as you drive back to your accommodation in Denali.`
+                    Bring your camera and curiosity about this amazing landscape. After completing the trail, relax in the van as you drive back to your accommodation in Denali.`,
+                    price: 15
                   }
                 }})
               }}>Trips to Denali Nation Park with a guide</li>
@@ -385,16 +400,19 @@ const getNumberOfOrder=()=>{
               atractions:{
                 first: {
                   name: 'Visit the capital of fishing - Yakutat',
-                  description: `Rent fishing gear here and fish in one of the world's most angler-friendly locations`
+                  description: `Rent fishing gear here and fish in one of the world's most angler-friendly locations`,
+                  price: 35
                 },
                 second: {
                   name: 'Guided fishing on the Kenai Peninsula',
                   description: `
-                  Expeditions to Alaska to the Kenai Peninsula. Trips for large salmon (5 species of salmon, including the largest King Salmon and others Kidney Salmon, Silver Salmon, Pink Salmon, Sockeye Salmon), for trout (Brown Trout, Rainbow Trout, Steelhead, Dolly Varden, Arctic Char) as well as smoke and grayling .`
+                  Expeditions to Alaska to the Kenai Peninsula. Trips for large salmon (5 species of salmon, including the largest King Salmon and others Kidney Salmon, Silver Salmon, Pink Salmon, Sockeye Salmon), for trout (Brown Trout, Rainbow Trout, Steelhead, Dolly Varden, Arctic Char) as well as smoke and grayling .`,
+                  price: 45
                 },
                 third: {
                   name: 'Enjoy Nowitna',
-                  description: `Rent fishing gear here and fish in one of the world's most angler-friendly locations`
+                  description: `Rent fishing gear here and fish in one of the world's most angler-friendly locations`,
+                  price: 20
                 }
               }})
               }}>Rent a fishing equipment</li>
@@ -427,7 +445,8 @@ const getNumberOfOrder=()=>{
                     
                     The highlight of the tour is Juneau's natural treasure, the Mendenhall Glacier. It is one of 38 glaciers flowing out of Juneau's vast 1,500-square-mile ice field.
                     
-                    At this stop, you can explore this glacial wonder from a variety of perspectives, such as Nugget Creek Falls and the Photo Point Trail, which meanders along Lake Mendenhall and provides an unobstructed view of the glacier face. Visit the Mendenhall Glacier Visitor Center for an elevated view of the glacier and interactive geology exhibits explaining the formation of the glacier.`
+                    At this stop, you can explore this glacial wonder from a variety of perspectives, such as Nugget Creek Falls and the Photo Point Trail, which meanders along Lake Mendenhall and provides an unobstructed view of the glacier face. Visit the Mendenhall Glacier Visitor Center for an elevated view of the glacier and interactive geology exhibits explaining the formation of the glacier.`,
+                    price: 150
                   } ,
                   second: {
                     name: 'Segway Rainforest Photo Safari',
@@ -438,6 +457,7 @@ const getNumberOfOrder=()=>{
                     Hear the calls of eagles in flight, the waves lapping against the shoreline, and maybe even spot a humpback whale from time to time. For an added adventure, hop off your Segway and walk the seven-minute path to a secluded beach to enjoy some local snacks. Immerse yourself in the Tongas National Forest, a temperate rainforest and the largest national forest in the US.
                     
                     Continue on to take amazing photos while taking in the panoramic views with fellow travelers. During the journey, your guide will tell you about the diverse native flora and fauna. Don't miss this extraordinary experience to discover one of the most unique places in Alaska.`
+                    ,price: 59
                   }, 
                   third: {
                     name: 'Sentinel Lighthouse and Whale Watching Cruise',
@@ -461,14 +481,8 @@ const getNumberOfOrder=()=>{
                     
                     
                     Immerse yourself in history, mobil to the Sentinel Lighthouse and think about maritime history looking for its investment in 1902. Imagine the lonely life of a lighthouse keeper.
-                    
-                    
-                    
-                    Check out the shop for souvenir lighthouse pins, t-shirts, hats and sweatshirts that can be purchased, with proceeds going towards the lighthouse's ongoing restoration. Climb the lighthouse tower, view the lighthouse and look out over the Lynn Canal.
-                    
-                    
-                    
-                    Return to the boat for a scenic drive to Yankee Cove to meet your driver who will take you live to the Brotherhood Bridge Lookout, where you can view the Mendenhall Glacier (weather permitting). Return to the ship and return to the meeting point in Juneau.`
+                   `,
+                   price: 100
                   } ,
                   
             
@@ -492,7 +506,8 @@ const getNumberOfOrder=()=>{
                   
                   
                   
-                  Marvel at the speed of the Dall Porpoise as it surfs the ship's wake. Marvel at the size and majesty of killer whales, humpback whales and other amazing whale species, and learn about their habitat from your on-board guide. Admire the wildlife of Kenai Fjords National Park.`
+                  Marvel at the speed of the Dall Porpoise as it surfs the ship's wake. Marvel at the size and majesty of killer whales, humpback whales and other amazing whale species, and learn about their habitat from your on-board guide. Admire the wildlife of Kenai Fjords National Park.`,
+                  price: 170
                 },
                 second: {
                   name: `Traditional dog sled ride from Alaska`,
@@ -516,7 +531,8 @@ const getNumberOfOrder=()=>{
                   
                   
                   
-                  After the ride, let the dogs run out for a while to play. Connect with the huskies and watch them happily jump around you. Finally, warm up in the visitor center with cookies, cocoa, and a dog hug.`
+                  After the ride, let the dogs run out for a while to play. Connect with the huskies and watch them happily jump around you. Finally, warm up in the visitor center with cookies, cocoa, and a dog hug.`,
+                  price: 20
                 },
                 third: {
                   name: 'Alaska Wildlife Conservation Center',
@@ -534,7 +550,8 @@ const getNumberOfOrder=()=>{
                   
                   
                   Relax on your own vehicle with a scenic 1.5-mile loop around the sanctuary. See orphaned and injured alongside animals by the AWCC now given a forever home.
-                `
+                `,
+                price: 50
                 }
               }})
               }}>Visit Anchorage and see the most popular places </li> </Link> 
@@ -555,7 +572,8 @@ const getNumberOfOrder=()=>{
   
                   The cruise begins with a wildlife search in the protected waters of Resurrection Bay. Whales, sea otters and puffins are often sighted within minutes of leaving port. The captain will provide information about the wildlife, glaciers, fjords and history of the area.
                 
-                Stop at one of the tidal glaciers where calving is common, where giant chunks of glacier ice break off and fall into the water. A fully stocked bar is available for those wishing to sample local beers and glacier cocktails. Enjoy a deli lunch on board during the cruise.`
+                Stop at one of the tidal glaciers where calving is common, where giant chunks of glacier ice break off and fall into the water. A fully stocked bar is available for those wishing to sample local beers and glacier cocktails. Enjoy a deli lunch on board during the cruise.`,
+                price: 150
                 },
                 second: {
                   name: 'Valdez: 6-Hour Columbia Glacier Cruise',
@@ -571,7 +589,8 @@ const getNumberOfOrder=()=>{
                   
                   
                   
-                  Step into Columbia Bay and put on your warm layers and winter gear. Discover a world surrounded by ice, largely untouched by humans. Return in time to explore the community of Valdez and enjoy dinner at a local restaurant.`
+                  Step into Columbia Bay and put on your warm layers and winter gear. Discover a world surrounded by ice, largely untouched by humans. Return in time to explore the community of Valdez and enjoy dinner at a local restaurant.`,
+                  price: 120
                 },
                 third: {
                   name: 'From Juneau: Whale Watching Cruise with Refreshments',
@@ -587,7 +606,8 @@ const getNumberOfOrder=()=>{
                   
                   
                   
-                  This tour includes transfers between downtown and Auke Bay and two hours on the water. The price of the tour includes onboard drinks including bottled water, coffee, hot chocolate and a small snack of locally caught Alaskan salmon on a fresh bagel.`
+                  This tour includes transfers between downtown and Auke Bay and two hours on the water. The price of the tour includes onboard drinks including bottled water, coffee, hot chocolate and a small snack of locally caught Alaskan salmon on a fresh bagel.`,
+                  price: 200
                 }
               
               }})
@@ -603,7 +623,8 @@ const getNumberOfOrder=()=>{
               atractions:{
                 first:{
                   name: 'Hymer motorhome',
-                  description: `Rent a modern HYMER and enjoy Alaska with him`
+                  description: `Rent a modern HYMER and enjoy Alaska with him`,
+                  price: 100
                 },
                 second: {
                   name: 'Anchorage: 1-Hour Tram Tour',
@@ -613,13 +634,15 @@ const getNumberOfOrder=()=>{
                   
                   See the Alaska Railroad and floating planes departing from Lake Hood and Lake Spenard. Enjoy breathtaking views of mountain ranges, wildlife, and historic districts
                   
-                  Plus, get a coupon book serving over 20 restaurants, gift shops, tours, and attractions in downtown Anchorage.`
+                  Plus, get a coupon book serving over 20 restaurants, gift shops, tours, and attractions in downtown Anchorage.`,
+                  price: 30
                   
                 },
                 third:{
                   name: 'Alaska Railroad',
                   description: `
-                  Deciding to travel on the Alaska Railroad train, we are practically "doomed" to watch the amazing local nature at its best. Regardless of the route, the views are always stunning - mountain peaks, rushing rivers, valleys, forests, glaciers.`
+                  Deciding to travel on the Alaska Railroad train, we are practically "doomed" to watch the amazing local nature at its best. Regardless of the route, the views are always stunning - mountain peaks, rushing rivers, valleys, forests, glaciers.`,
+                  price: 60
                 }
               }})
               }}>Rent a motorhome and admire Alaska landscape</li> </Link>
@@ -638,7 +661,8 @@ const getNumberOfOrder=()=>{
                     
                     
                     
-                    Glide through trees and tundra on over half a mile of zip lines. Finish this one-of-a-kind adventure by racing to the finish with your friends and family.`
+                    Glide through trees and tundra on over half a mile of zip lines. Finish this one-of-a-kind adventure by racing to the finish with your friends and family.`,
+                    price: 80
                   },
                   second:{
                     name: 'Denali National Park: Wilderness ATV Adventure',
@@ -648,7 +672,8 @@ const getNumberOfOrder=()=>{
                     
                     Navigate rocky creek beds and even spend time splashing around in the water (weather permitting). Experienced guides will lead you through the rugged terrain and provide photo opportunities.
                     
-                    The wildlife is plentiful - watch out for moose on the trail. The total route of the tour is approximately 10 miles with 1.5 hours on the trails. The length of the tour is approximately 2.5 hours from pickup to pickup.`
+                    The wildlife is plentiful - watch out for moose on the trail. The total route of the tour is approximately 10 miles with 1.5 hours on the trails. The length of the tour is approximately 2.5 hours from pickup to pickup.`,
+                    price: 50
                   },
                   third: {
                     name: 'Denali: Denali National Park Walking Tour',
@@ -658,7 +683,8 @@ const getNumberOfOrder=()=>{
                     
                     Learn about the animals, people, and plants of Denali from your expert local guide. Admire the unique natural landscape as you traverse the trail. Enjoy stopping for rest and conversation along the way, and even pick blueberries when in season.
                     
-                    Bring your camera and curiosity about this amazing landscape. After completing the trail, relax in the van as you drive back to your accommodation in Denali.`
+                    Bring your camera and curiosity about this amazing landscape. After completing the trail, relax in the van as you drive back to your accommodation in Denali.`,
+                    price: 15
                   }
                 }})
               }}>Trips to Denali Nation Park with a guide</li> </Link>
@@ -672,16 +698,19 @@ const getNumberOfOrder=()=>{
               atractions:{
                 first: {
                   name: 'Visit the capital of fishing - Yakutat',
-                  description: `Rent fishing gear here and fish in one of the world's most angler-friendly locations`
+                  description: `Rent fishing gear here and fish in one of the world's most angler-friendly locations`,
+                  price: 35
                 },
                 second: {
                   name: 'Guided fishing on the Kenai Peninsula',
                   description: `
-                  Expeditions to Alaska to the Kenai Peninsula. Trips for large salmon (5 species of salmon, including the largest King Salmon and others Kidney Salmon, Silver Salmon, Pink Salmon, Sockeye Salmon), for trout (Brown Trout, Rainbow Trout, Steelhead, Dolly Varden, Arctic Char) as well as smoke and grayling .`
+                  Expeditions to Alaska to the Kenai Peninsula. Trips for large salmon (5 species of salmon, including the largest King Salmon and others Kidney Salmon, Silver Salmon, Pink Salmon, Sockeye Salmon), for trout (Brown Trout, Rainbow Trout, Steelhead, Dolly Varden, Arctic Char) as well as smoke and grayling .`,
+                  price: 45
                 },
                 third: {
                   name: 'Enjoy Nowitna',
-                  description: `Rent fishing gear here and fish in one of the world's most angler-friendly locations`
+                  description: `Rent fishing gear here and fish in one of the world's most angler-friendly locations`,
+                  price: 20
                 }
               }})
               }}>Rent a fishing equipment</li></Link>
