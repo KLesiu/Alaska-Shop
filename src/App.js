@@ -8,6 +8,7 @@ import Info from './components/Info';
 import Slider from './components/Slider';
 import Menu from './components/Menu';
 import Item from './components/Item';
+import Basket from './components/Basket';
 import { Link } from 'react-router-dom';
 
 import { BrowserRouter,Routes,Route} from 'react-router-dom';
@@ -71,16 +72,20 @@ function App() {
   
 
 }})
+  const [basket,setBasket]=useState({list:[],prices:[]})
+  const [basketComponent,setBasketComponent]=useState('')
+  
 const [currentItem,setCurrentItem]=useState('')
 const handleChange=(e)=>{
   const currentPhoto=showImage(e.target.textContent)
+  const currentPrice=showPrice(e.target.textContent)
   if(item.atractions.first.name===e.target.textContent)
   {
    
-    setCurrentItem({name:e.target.textContent,description:item.atractions.first.description,img:currentPhoto})
+    setCurrentItem({name:e.target.textContent,description:item.atractions.first.description,img:currentPhoto,price:currentPrice})
   } 
-  else if(item.atractions.second.name===e.target.textContent) setCurrentItem({name:e.target.textContent,description:item.atractions.second.description,img:currentPhoto})
-  else if (item.atractions.third.name===e.target.textContent) setCurrentItem({name:e.target.textContent,description:item.atractions.third.description,img:currentPhoto})
+  else if(item.atractions.second.name===e.target.textContent) setCurrentItem({name:e.target.textContent,description:item.atractions.second.description,img:currentPhoto,price:currentPrice})
+  else if (item.atractions.third.name===e.target.textContent) setCurrentItem({name:e.target.textContent,description:item.atractions.third.description,img:currentPhoto,price:currentPrice})
 }
 const showImage=(value)=>{
   if(value==='Juneau and Mendenhall glacier') return '/Images/Juneau/1.jpg'
@@ -103,25 +108,64 @@ const showImage=(value)=>{
   return '/Images/Fishing/fishing-g10e0ed3b9_640.jpg'
   else if(value==='Enjoy Nowitna') return '/Images/Fishing/rod-g7a2558edb_640.jpg'
 }
+const showPrice=(value)=>{
+  if(value==='Juneau and Mendenhall glacier') return 150
+  else if(value==='Segway Rainforest Photo Safari') return 59
+  else if(value==='Sentinel Lighthouse and Whale Watching Cruise') return 100
+  else if(value===`Half-Day Resurrection Bay Wildlife Cruise`) return 170
+  else if(value===`Traditional dog sled ride from Alaska`) return 20
+  else if(value==='Alaska Wildlife Conservation Center') return 50
+  else if(value==='Kenai Fjords National Park 6-Hour Cruise') return 150
+  else if(value==='Valdez: 6-Hour Columbia Glacier Cruise') return 120
+  else if(value==='From Juneau: Whale Watching Cruise with Refreshments') return 200
+  else if(value==='Hymer motorhome') return 100
+  else if(value==='Anchorage: 1-Hour Tram Tour') return 30
+  else if(value==='Alaska Railroad') return 60
+  else if(value==='Denali Park Zipline Adventure') return 80
+  else if(value==='Denali National Park: Wilderness ATV Adventure') return 50
+  else if(value==='Denali: Denali National Park Walking Tour') return 15
+  else if(value==='Visit the capital of fishing - Yakutat') return 35
+  else if(value==='Guided fishing on the Kenai Peninsula')
+  return 45
+  else if(value==='Enjoy Nowitna') return 20
+}
 const getNumberOfOrder=()=>{
-  const numberOfOrder=document.querySelector('.numberOfOrder')
-  console.log(numberOfOrder.value)
+  const numberOfOrder=document.querySelector('.numberOfOrder').value
+  const currentPrice=document.querySelector('.currPrice').textContent
+  const attraction=document.querySelector('.titleOfAttraction').textContent
+  const price=numberOfOrder*parseInt(currentPrice)
+  setBasket({list:[...basket.list,attraction],prices:[...basket.prices,price]})
+ 
+}
+const showBasket=()=>{
+setBasketComponent(()=>{
+  return(
+    <Basket hideBasket={hideBasket} basket={basket} />
+  )
+})
+}
+const hideBasket=()=>{
+  setBasketComponent('')
+  
 }
   return (
     <div className="App">
-   
     
   
     <Routes>
       <Route path='/' element={<div>
-        <Menu />
+        <Menu basket={showBasket}  />
         <Main />
         <Info />
         <Slider />
+        {basketComponent}
       </div>}/>
       <Route path='/shopPage' element={
       <div>
-        <Menu />
+        
+        
+        <Menu basket={showBasket} />
+        
         <Main />
         <div className="shopPage">
          <div className="containerShop">
@@ -419,13 +463,15 @@ const getNumberOfOrder=()=>{
             </ul>
         </nav>
         <Item info={item} onChange={handleChange} />
+        {basketComponent}
         </div>
       </div>
       </div>
      }/>
      <Route path='/shopPage/:id' element={
       <div>
-         <Menu />
+       
+         <Menu basket={showBasket} />
         <Main />
         <div className="shopPage">
          <div className="containerShop">
@@ -717,6 +763,7 @@ const getNumberOfOrder=()=>{
             </ul>
         </nav>
         <ItemInfo info={currentItem} numberOfOrder={getNumberOfOrder} />
+        {basketComponent}
         </div>
       </div>
        

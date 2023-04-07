@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import './styles/Menu.css'
 
-const Menu=()=>{
+const Menu=(props)=>{
     const [search,setSearch]=useState(false)
     const [showInput,setShowInput]=useState('')
     const handleChange=()=>{
@@ -31,7 +31,7 @@ return(
 search
 </span></button>
 {showInput}
-        <button><span style={{fontSize:60+'px',fontWeight:700}} className="material-symbols-outlined">
+        <button onClick={props.basket}><span style={{fontSize:60+'px',fontWeight:700}} className="material-symbols-outlined">
 shopping_basket
 </span></button>
     </nav>
