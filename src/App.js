@@ -74,7 +74,6 @@ function App() {
 const [currentItem,setCurrentItem]=useState('')
 const handleChange=(e)=>{
   const currentPhoto=showImage(e.target.textContent)
-  console.log(currentPhoto)
   if(item.atractions.first.name===e.target.textContent)
   {
    
@@ -103,6 +102,10 @@ const showImage=(value)=>{
   else if(value==='Guided fishing on the Kenai Peninsula')
   return '/Images/Fishing/fishing-g10e0ed3b9_640.jpg'
   else if(value==='Enjoy Nowitna') return '/Images/Fishing/rod-g7a2558edb_640.jpg'
+}
+const getNumberOfOrder=()=>{
+  const numberOfOrder=document.querySelector('.numberOfOrder')
+  console.log(numberOfOrder.value)
 }
   return (
     <div className="App">
@@ -684,7 +687,7 @@ const showImage=(value)=>{
               }}>Rent a fishing equipment</li></Link>
             </ul>
         </nav>
-        <ItemInfo info={currentItem} />
+        <ItemInfo info={currentItem} numberOfOrder={getNumberOfOrder} />
         </div>
       </div>
        

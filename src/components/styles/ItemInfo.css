@@ -11,3 +11,31 @@
     right: 5%;
     width: 60%;
 }
+.currentInfo h2{
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+}
+.currentInfo p{
+    font-size: 20px;
+    margin: 0;
+    padding: 1%;
+    width: 40%;
+    text-align: justify;
+}
+.currentInfo img{
+    height: 50%;
+    width: 50%;
+}
+.currentInfo input{
+    height: 10%;
+    margin: 0;
+    width: 10%;
+}
+.currentInfo button{
+    align-items: center;
+    display: flex;
+    font-size: 35px;
+    height: 10%;
+
+}
