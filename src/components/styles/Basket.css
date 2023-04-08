@@ -7,3 +7,16 @@
     width: 25%;
     z-index: 3;
 }
+.basketDiv h2{
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+}
+.closeBasket{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.basketList{
+    font-size: 30px;
+}
