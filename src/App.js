@@ -9,7 +9,7 @@ import Slider from './components/Slider';
 import Menu from './components/Menu';
 import Item from './components/Item';
 import Basket from './components/Basket';
-import { Link } from 'react-router-dom';import { BrowserRouter,Routes,Route} from 'react-router-dom';
+import { HashRouter, Link } from 'react-router-dom';import { BrowserRouter,Routes,Route} from 'react-router-dom';
 import ItemInfo from './components/ItemInfo';
 function App() {
   const [item,setItem]=useState({name:'Visit beautiful Juneau!',img:{
@@ -125,7 +125,7 @@ const hideBasket=()=>{
   return (
     <div className="App">
     
-  
+  <HashRouter>
     <Routes>
       <Route path='/' element={<div>
         <Menu basket={showBasket}  />
@@ -487,7 +487,7 @@ const hideBasket=()=>{
    
         </Routes>
   
-    
+        </HashRouter>
    
         
      
