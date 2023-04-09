@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Alaska-Shop/static/css/main.c1a07862.css",
+    "main.js": "/Alaska-Shop/static/js/main.6ed3325d.js",
+    "index.html": "/Alaska-Shop/index.html",
+    "main.c1a07862.css.map": "/Alaska-Shop/static/css/main.c1a07862.css.map",
+    "main.6ed3325d.js.map": "/Alaska-Shop/static/js/main.6ed3325d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1a07862.css",
+    "static/js/main.6ed3325d.js"
+  ]
+}
