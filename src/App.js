@@ -9,7 +9,7 @@ import Slider from './components/Slider';
 import Menu from './components/Menu';
 import Item from './components/Item';
 import Basket from './components/Basket';
-import { HashRouter, Link } from 'react-router-dom';import { BrowserRouter,Routes,Route} from 'react-router-dom';
+import { HashRouter, Link } from 'react-router-dom';import {Routes,Route} from 'react-router-dom';
 import ItemInfo from './components/ItemInfo';
 function App() {
   const [item,setItem]=useState({name:'Visit beautiful Juneau!',img:{
@@ -37,12 +37,7 @@ function App() {
   third: {
     name: 'Sentinel Lighthouse and Whale Watching Cruise',
     description: `Cruise to the Sentinel Island Lighthouse and search for humpback whales and killer whales on this cruise from Juneau. Snack on local Alaskan fudge products, granola (or similar) bars, and caribou sausage sticks. Relax with drinks such as coffee, tea and water.    Get picked up from the meeting point in a comfortable van and listen to fascinating commentary as you drive to Auke Bay (Don D. Statter Port). Get to know your captain and crew. Climb aboard a ship and set off to explore the rocky coast of Alaska.
-   Relax in the heated cabin with a cup of hot coffee and enjoy the view of the fresh air, wildlife. 
-   Sail through Alaska's Inside Passage and learn about whales and the Alaska Lighthouse Route. When humpback whales are spotted, the captain moves the ship into position to get a photo opportunity.
-    Arrive at Sentinel Island and disembark the ship for a short walk along the show promenade due to a photo removal along the way. See the Lynn Channel (one of the longest and deepest fjords in the world) and the surrounding islands and waterways.
-   Immerse yourself in history, mobil to the Sentinel Lighthouse and think about maritime history looking for its investment in 1902. Imagine the lonely life of a lighthouse keeper.
-    Check out the shop for souvenir lighthouse pins, t-shirts, hats and sweatshirts that can be purchased, with proceeds going towards the lighthouse's ongoing restoration. Climb the lighthouse tower, view the lighthouse and look out over the Lynn Canal.
-   Return to the boat for a scenic drive to Yankee Cove to meet your driver who will take you live to the Brotherhood Bridge Lookout, where you can view the Mendenhall Glacier (weather permitting). Return to the ship and return to the meeting point in Juneau.`
+   Relax in the heated cabin with a cup of hot coffee and enjoy the view of the fresh air, wildlife. `
   } ,
   }})
   const [basket,setBasket]=useState({list:[],prices:0,numberOfOrder:[]})
