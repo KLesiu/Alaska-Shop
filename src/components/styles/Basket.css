@@ -59,3 +59,14 @@
     
   
 }
+@media screen and (max-width:800px) {
+    .basketDiv {
+        background-color: rgba(182, 30, 187, 0.507);
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        z-index: 3;
+    }
+}
