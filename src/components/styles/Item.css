@@ -45,11 +45,11 @@
 .holderForInfo h3{
     font-size: 40px;
 }
-.listAtractions >a{
+.listAtractions a{
     color: rgb(228, 212, 68);
 
     font-size: 30px;
-    margin-top: 50px;
+    margin-top: 80px;
     text-decoration: none;
 }
 .listAtractions >a:hover{

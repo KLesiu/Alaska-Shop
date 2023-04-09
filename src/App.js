@@ -134,7 +134,8 @@ const getNumberOfOrder=()=>{
   const currentPrice=document.querySelector('.currPrice').textContent
   const attraction=document.querySelector('.titleOfAttraction').textContent
   const price=numberOfOrder*parseInt(currentPrice)
-  setBasket({list:[...basket.list,attraction],prices:basket.prices+price,numberOfOrder:[...basket.numberOfOrder,numberOfOrder]})
+    setBasket({list:[...basket.list,attraction],prices:basket.prices+price,numberOfOrder:[...basket.numberOfOrder,numberOfOrder]})
+
  
 }
 const showBasket=()=>{
@@ -146,6 +147,7 @@ setBasketComponent(()=>{
 }
 const hideBasket=()=>{
   setBasketComponent('')
+  console.log(basket.numberOfOrder)
   
 }
   return (

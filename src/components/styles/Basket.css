@@ -13,16 +13,27 @@
     text-align: center;
     width: 100%;
 }
+.listInBasket{
+    display: flex;
+}
 .closeBasket{
     position: absolute;
     right: 0;
     top: 0;
 }
-.basketList{
+.basketList,.ordersList{
     color: rgb(231, 231, 231);
     font-size: 30px;
-  
+    margin: 0;
     font-weight: 700;
+    width: 70%;
+}
+.ordersList{
+   display: flex;
+   flex-wrap: wrap;
+   list-style-type: none;
+   flex-direction: column;
+   justify-content: space-between;
 }
 .currentPrice{
     color: rgb(255, 238, 0);
