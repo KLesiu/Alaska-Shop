@@ -72,7 +72,7 @@ function App() {
   
 
 }})
-  const [basket,setBasket]=useState({list:[],prices:0})
+  const [basket,setBasket]=useState({list:[],prices:0,numberOfOrder:[]})
   const [basketComponent,setBasketComponent]=useState('')
   
 const [currentItem,setCurrentItem]=useState('')
@@ -134,7 +134,7 @@ const getNumberOfOrder=()=>{
   const currentPrice=document.querySelector('.currPrice').textContent
   const attraction=document.querySelector('.titleOfAttraction').textContent
   const price=numberOfOrder*parseInt(currentPrice)
-  setBasket({list:[...basket.list,attraction],prices:basket.prices+price})
+  setBasket({list:[...basket.list,attraction],prices:basket.prices+price,numberOfOrder:[...basket.numberOfOrder,numberOfOrder]})
  
 }
 const showBasket=()=>{

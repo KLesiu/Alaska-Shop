@@ -4,19 +4,12 @@ import './styles/Basket.css'
 const Basket=(props)=>{
     
     const list=props.basket.list.map((element)=>{
+        
         return(
-            <li>{element}</li>
+            <li>{element} x{props.basket.numberOfOrder[props.basket.list.indexOf(element)]}</li>
         )
     })
-    
-     
-     
-
-    
-   
-    
-   
-    
+       
 return(
     <div className="basketDiv">
         <h2>Your basket</h2>
@@ -24,7 +17,8 @@ return(
         <ul className="basketList">
             {list}
         </ul>
-        <p>{props.basket.prices}</p>
+        <p className="currentPrice">Your total is: <span>{props.basket.prices}$</span></p>
+        <button className="buttonBuy">BUY</button>
     </div>
 )
 }

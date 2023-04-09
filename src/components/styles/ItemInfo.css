@@ -32,6 +32,7 @@
     text-align: justify;
 }
 .currentInfo img{
+    border-radius: 100px;
     height: 50%;
     width: 50%;
 }
