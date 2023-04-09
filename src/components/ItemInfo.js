@@ -9,7 +9,7 @@ return(
       <p className="description">{props.info.description}</p>
       <img src={props.info.img}></img>
       <p className="price">Price: <span className="currPrice">{props.info.price}</span>$ </p>
-      <input  className="numberOfOrder" type="number"></input>
+      <input min={1}  className="numberOfOrder" type="number"></input>
       <button onClick={props.numberOfOrder} >Add to basket</button>
    </div>
 )
