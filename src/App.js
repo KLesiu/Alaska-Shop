@@ -13,9 +13,9 @@ import { HashRouter, Link } from 'react-router-dom';import { BrowserRouter,Route
 import ItemInfo from './components/ItemInfo';
 function App() {
   const [item,setItem]=useState({name:'Visit beautiful Juneau!',img:{
-    first:'/Images/Juneau/1.jpg',
-    second:'/Images/Juneau/2.jpg',
-    third: '/Images/Juneau/3.jpg'
+    first:'./Images/Juneau/1.jpg',
+    second:'./Images/Juneau/2.jpg',
+    third: './Images/Juneau/3.jpg'
 },atractions:{
   first: {
     name:'Juneau and Mendenhall glacier',
