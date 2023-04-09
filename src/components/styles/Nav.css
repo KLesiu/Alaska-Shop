@@ -46,7 +46,7 @@ height: 90%;
     color: rgb(215, 84, 233);
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1400px) {
     .nav ul>a,.nav ul>li{
         color: yellow;
         cursor: pointer;
