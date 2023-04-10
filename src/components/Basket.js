@@ -1,5 +1,5 @@
 import React from "react";
-
+import uniqid from 'uniqid'
 import './styles/Basket.css'
 const Basket=(props)=>{
     
@@ -11,7 +11,7 @@ const Basket=(props)=>{
     })
     const orderList=props.basket.numberOfOrder.map((element)=>{
         return(
-            <li>x{element}</li>
+            <li key={uniqid()}>x{element}</li>
         )
     })
        
@@ -29,7 +29,7 @@ return(
         </div>
 
         <p className="currentPrice">Your total is: <span>{props.basket.prices}$</span></p>
-        <button className="buttonBuy">BUY</button>
+        <button onClick={props.buy} className="buttonBuy">BUY</button>
     </div>
 )
 }

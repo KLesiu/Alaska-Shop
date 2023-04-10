@@ -11,6 +11,7 @@ import Item from './components/Item';
 import Basket from './components/Basket';
 import { HashRouter, Link } from 'react-router-dom';import {Routes,Route} from 'react-router-dom';
 import ItemInfo from './components/ItemInfo';
+import uniqid from 'uniqid'
 function App() {
   const [item,setItem]=useState({name:'Visit beautiful Juneau!',img:{
     first:'./Images/Juneau/1.jpg',
@@ -97,6 +98,11 @@ const showPrice=(value)=>{
   return 45
   else if(value==='Enjoy Nowitna') return 20
 }
+const buy=()=>{
+  setBasket({list:[],prices:0,numberOfOrder:[]})
+  setBasketComponent('')
+  alert('Thank you for your purchase! Have a nice day! ')
+}
 const getNumberOfOrder=()=>{
   let numberOfOrder=document.querySelector('.numberOfOrder').value
   const currentPrice=document.querySelector('.currPrice').textContent
@@ -109,7 +115,7 @@ const getNumberOfOrder=()=>{
 const showBasket=()=>{
 setBasketComponent(()=>{
   return(
-    <Basket hideBasket={hideBasket} basket={basket} />
+    <Basket buy={buy} hideBasket={hideBasket} basket={basket} />
   )
 })
 }
@@ -141,7 +147,7 @@ const hideBasket=()=>{
         <nav className="nav">
             <h2>Our Offer</h2>
             <ul>
-              <li onClick={()=>{
+              <li key={uniqid()}  onClick={()=>{
                 setItem({name:'Visit beautiful Juneau!',img:{
    first:'./Images/Juneau/1.jpg',
    second:'./Images/Juneau/2.jpg',
@@ -170,7 +176,7 @@ const hideBasket=()=>{
    price: 100
  } ,
           }})
-              }}>Trips to the Capital - Exciting Juneau</li>               <li onClick={()=>{
+              }}>Trips to the Capital - Exciting Juneau</li>               <li key={uniqid()} onClick={()=>{
                 setItem({name:'Have an amazing adventures in Anchorage!',img:{
    first:'./Images/Anchorage/boat-3536807__340.jpg',
    second:'./Images/Anchorage/sandspollen-3767414__340.jpg',
@@ -195,7 +201,7 @@ const hideBasket=()=>{
  price: 50
                 }
               }})
-              }}>Visit Anchorage and see the most popular places </li>              <li onClick={()=>{
+              }}>Visit Anchorage and see the most popular places </li>              <li key={uniqid()} onClick={()=>{
                 setItem({name:'Do you like sailing? You can do that in Alaska!',img:{
    first:'./Images/ShipTrips/cruise-g86757c4ac_640.jpg',
    second:'./Images/ShipTrips/boat-gd014cea71_640.jpg',
@@ -219,7 +225,7 @@ const hideBasket=()=>{
                 }
               
               }})
-              }} >Enjoy Ship Trips</li>              <li onClick={()=>{
+              }} >Enjoy Ship Trips</li>              <li key={uniqid()} onClick={()=>{
                 setItem({name:'Enjoy Alaska alone,family or friends. Rent a motorhome or move by train',img:{
    first:'./Images/camper.jpg',
    second: './Images/train.jpg',
@@ -244,7 +250,7 @@ const hideBasket=()=>{
  price: 60
                 }
               }})
-              }}>Rent a motorhome and admire Alaska landscape</li>              <li onClick={()=>{
+              }}>Rent a motorhome and admire Alaska landscape</li>              <li key={uniqid()} onClick={()=>{
                 setItem({name:'Enjoy the beauty of nature in National Denali Park',img:{
    first:'./Images/Denali/denali-national-park-g32f0dae85_640.jpg',
    second:'./Images/Denali/marmot-g2a413b880_640.jpg',
@@ -268,7 +274,7 @@ const hideBasket=()=>{
    price: 15
  }
                 }})
-              }}>Trips to Denali Nation Park with a guide</li>              <li onClick={()=>{
+              }}>Trips to Denali Nation Park with a guide</li>              <li key={uniqid()} onClick={()=>{
                 setItem({name:'Fishing is pure pleasure with us, if you need equipment, you will find it with us!',img:{
    first:'./Images/Fishing/boat-ga1168822d_640.jpg',
    second:'./Images/Fishing/fishing-g10e0ed3b9_640.jpg',
@@ -311,7 +317,7 @@ const hideBasket=()=>{
         <nav className="nav">
             <h2>Our Offer</h2>
             <ul>
-             <Link to={'/shopPage'}><li onClick={()=>{
+             <Link to={'/shopPage'}><li key={uniqid()} onClick={()=>{
                 setItem({name:'Visit beautiful Juneau!',img:{
    first:'./Images/Juneau/1.jpg',
    second:'./Images/Juneau/2.jpg',
@@ -338,7 +344,7 @@ const hideBasket=()=>{
   price: 100
  } ,
           }})
-              }}>Trips to the Capital - Exciting Juneau</li> </Link>             <Link to={'/shopPage'}> <li onClick={()=>{
+              }}>Trips to the Capital - Exciting Juneau</li> </Link>             <Link to={'/shopPage'}> <li key={uniqid()} onClick={()=>{
                 setItem({name:'Have an amazing adventures in Anchorage!',img:{
    first:'./Images/Anchorage/boat-3536807__340.jpg',
    second:'./Images/Anchorage/sandspollen-3767414__340.jpg',
@@ -366,7 +372,7 @@ const hideBasket=()=>{
                 price: 50
                 }
               }})
-              }}>Visit Anchorage and see the most popular places </li> </Link>             <Link to={'/shopPage'}> <li onClick={()=>{
+              }}>Visit Anchorage and see the most popular places </li> </Link>             <Link to={'/shopPage'}> <li key={uniqid()} onClick={()=>{
                 setItem({name:'Do you like sailing? You can do that in Alaska!',img:{
    first:'./Images/ShipTrips/cruise-g86757c4ac_640.jpg',
    second:'./Images/ShipTrips/boat-gd014cea71_640.jpg',
@@ -394,7 +400,7 @@ const hideBasket=()=>{
                 }
               
               }})
-              }} >Enjoy Ship Trips</li> </Link>             <Link to={'/shopPage'}> <li onClick={()=>{
+              }} >Enjoy Ship Trips</li> </Link>             <Link to={'/shopPage'}> <li key={uniqid()} onClick={()=>{
                 setItem({name:'Enjoy Alaska alone,family or friends. Rent a motorhome or move by train',img:{
    first:'./Images/camper.jpg',
    second: './Images/train.jpg',
@@ -419,7 +425,7 @@ const hideBasket=()=>{
  price: 60
                 }
               }})
-              }}>Rent a motorhome and admire Alaska landscape</li> </Link>            <Link to={'/shopPage'}> <li onClick={()=>{
+              }}>Rent a motorhome and admire Alaska landscape</li> </Link>            <Link to={'/shopPage'}> <li key={uniqid()} onClick={()=>{
                 setItem({name:'Enjoy the beauty of nature in National Denali Park',img:{
    first:'./Images/Denali/denali-national-park-g32f0dae85_640.jpg',
    second:'./Images/Denali/marmot-g2a413b880_640.jpg',
@@ -443,7 +449,7 @@ const hideBasket=()=>{
    price: 15
  }
                 }})
-              }}>Trips to Denali Nation Park with a guide</li> </Link>            <Link to={'/shopPage'}><li onClick={()=>{
+              }}>Trips to Denali Nation Park with a guide</li> </Link>            <Link to={'/shopPage'}><li key={uniqid()} onClick={()=>{
                 setItem({name:'Fishing is pure pleasure with us, if you need equipment, you will find it with us!',img:{
    first:'./Images/Fishing/boat-ga1168822d_640.jpg',
    second:'./Images/Fishing/fishing-g10e0ed3b9_640.jpg',

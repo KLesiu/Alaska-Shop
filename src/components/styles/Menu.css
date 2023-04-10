@@ -51,4 +51,10 @@ input{
     a{
         font-size: 20px;
     }
+    nav input{
+        position: absolute;
+        top: 100%;
+        left: 80%;
+        width: 30%;
+    }
 }
