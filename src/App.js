@@ -20,20 +20,15 @@ function App() {
 },atractions:{
   first: {
     name:'Juneau and Mendenhall glacier',
-    description: `
-    Discover the capital of Alaska. Nestled between stunning mountain vistas and winding waterways, the modern city of Juneau feels like the old west. From the colorful harbor to the busy capital building to the famous whale statue, this unique city has surprises around every corner.
-    
-    The highlight of the tour is Juneau's natural treasure, the Mendenhall Glacier. It is one of 38 glaciers flowing out of Juneau's vast 1,500-square-mile ice field.
-    
-    At this stop, you can explore this glacial wonder from a variety of perspectives, such as Nugget Creek Falls and the Photo Point Trail, which meanders along Lake Mendenhall and provides an unobstructed view of the glacier face. Visit the Mendenhall Glacier Visitor Center for an elevated view of the glacier and interactive geology exhibits explaining the formation of the glacier.`
+    description: `Discover the capital of Alaska. Nestled between stunning mountain vistas and winding waterways, the modern city of Juneau feels like the old west. From the colorful harbor to the busy capital building to the famous whale statue, this unique city has surprises around every corner.
+    The highlight of the tour is Juneau's natural treasure, the Mendenhall Glacier. 
+    `
   } ,
   second: {
     name: 'Segway Rainforest Photo Safari',
-    description: `Meet your guide at the cruise ship docks in Juneau, then take the short six-mile transfer to the tour starting point. A short training session will help you familiarize yourself with the Segway and learn how it responds to your body language. After check-in, you will receive safety equipment and your own Segway. You'll be surprised how quickly you get the hang of it and how fun it is to ride.    Once you set off, you'll be immediately greeted with views of the majestic Mendenhall Glacier. Cruise along the coast and make several photo stops while admiring the pristine waters of the Lynn Canal, which is part of the Inside Passage. Since you are on a Segway, you will have the opportunity to interact closely with nature.
-    
-    Hear the calls of eagles in flight, the waves lapping against the shoreline, and maybe even spot a humpback whale from time to time. For an added adventure, hop off your Segway and walk the seven-minute path to a secluded beach to enjoy some local snacks. Immerse yourself in the Tongas National Forest, a temperate rainforest and the largest national forest in the US.
-    
-    Continue on to take amazing photos while taking in the panoramic views with fellow travelers. During the journey, your guide will tell you about the diverse native flora and fauna. Don't miss this extraordinary experience to discover one of the most unique places in Alaska.`
+    description: `Meet your guide at the cruise ship docks in Juneau, then take the short six-mile transfer to the tour starting point. A short training session will help you familiarize yourself with the Segway and learn how it responds to your body language. After check-in, you will receive safety equipment and your own Segway. You'll be surprised how quickly you get the hang of it and how fun it is to ride.
+            
+    Once you set off, you'll be immediately greeted with views of the majestic Mendenhall Glacier.`
   }, 
   third: {
     name: 'Sentinel Lighthouse and Whale Watching Cruise',
