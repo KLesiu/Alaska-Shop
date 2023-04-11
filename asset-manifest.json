@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Alaska-Shop/static/css/main.04ce8438.css",
+    "main.css": "/Alaska-Shop/static/css/main.81612eff.css",
     "main.js": "/Alaska-Shop/static/js/main.f19120d4.js",
     "index.html": "/Alaska-Shop/index.html",
-    "main.04ce8438.css.map": "/Alaska-Shop/static/css/main.04ce8438.css.map",
+    "main.81612eff.css.map": "/Alaska-Shop/static/css/main.81612eff.css.map",
     "main.f19120d4.js.map": "/Alaska-Shop/static/js/main.f19120d4.js.map"
   },
   "entrypoints": [
-    "static/css/main.04ce8438.css",
+    "static/css/main.81612eff.css",
     "static/js/main.f19120d4.js"
   ]
 }
