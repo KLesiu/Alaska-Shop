@@ -39,10 +39,9 @@
 .slider img{
     
     border-radius: 10px;
-    float: right;
     width: 70%;
     height: 70%;
-    left: 17%;
+    left: 20%;
     opacity: 0.6;
     position: absolute;
     bottom: 5%;
